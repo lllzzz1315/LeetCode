@@ -1,3 +1,4 @@
+import com.lzk.ListNode;
 import com.lzk.easy.Easy70;
 import com.sun.deploy.util.StringUtils;
 
@@ -95,11 +96,6 @@ public class Main {
         return result;
     }
 
-public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
     //超过半数的数字
     public int majorityElement(int[] nums) {
         if (nums == null || nums.length == 0) {
