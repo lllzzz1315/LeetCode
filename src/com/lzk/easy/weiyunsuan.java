@@ -28,6 +28,17 @@ public class weiyunsuan {
         return count;
     }
 
+    //取补数
+    public int findComplement(int num) {
+        String x = Integer.toBinaryString(num);
+        StringBuffer buff = new StringBuffer();
+        for (char tmp: x.toCharArray()) {
+            buff.append(tmp == '0' ?  "1" : "0");
+        }
+        return Integer.parseInt(buff.toString(), 2);
+
+    }
+
 
 
 }
